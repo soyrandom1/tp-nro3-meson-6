@@ -21,3 +21,23 @@ struct TPersonaje {
 	TDatos * DatosPersonales
 	TCaracteristicas * Caracteristicas
 };
+void cargarcaract(struct TCaracteristicas * CaracPers);
+void mostrarcaract(struct TCaracteristicas * CaracPers);
+int main(void){
+	return 0;
+}
+
+void cargarcaract(struct TCaracteristicas * CaracPers){
+	CaracPers->velocidad = rand()%10 + 1;
+	CaracPers->destreza = rand()%5 + 1;
+	CaracPers->fuerza = rand()%10 + 1;
+	CaracPers->Nivel = rand()%10 + 1;
+	CaracPers->Armadura = rand()%10 + 1;
+}
+void mostrarcaract(struct TCaracteristicas * CaracPers){
+	printf("Velocidad: %d\n", CaracPers->velocidad);
+	printf("Destreza: %d\n", CaracPers->destreza);
+	printf("Fuerza: %d\n", CaracPers->fuerza);
+	printf("Nivel: %d\n", CaracPers->Nivel);
+	printf("Armadura: %d\n", CaracPers->Armadura);
+}
