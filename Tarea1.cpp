@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 enum TRaza{Orco, Humano, Mago, Enano, Elfo}
-char Nombres[6][10]={“ale”, “b”, “c”, “d”, “e”}
-char Apellidos[6][10]={“f”, “g”, “hormiga”, “i”, “j”}
+char Nombres[6][15]={"Merodeador", "Rompehuesos", "Algoritmico", "Proscripto", "Cruzamontañas"}
+char Apellidos[6][10]={"Furioso", "Mistico", "Peregrino", "Galactico", "Sabio"}
 struct TDatos {
 	TRaza Raza; //nota 1
 	char *ApellidoNombre; //nota 2
