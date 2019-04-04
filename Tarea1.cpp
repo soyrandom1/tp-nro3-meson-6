@@ -41,7 +41,7 @@ int main(void){
 		fflush(stdin);
 		cargar_datos(Lista[i].DatosPersonales);
 		cargarcaract(Lista[i].Caracteristicas);
-		printf("\n");
+		printf("adsfsdgas\n");
 	}
 	for (int i = 0; i < cant; ++i)
 	{
@@ -75,7 +75,7 @@ void cargar_datos(struct TDatos *puntero){
 	char AM[30];
 	strcpy(AM, Apellidos[rand()%7]);
 	strcat(AM, Nombres[rand()%7]);
-	puntero->ApellidoNombre = (char*) malloc(sizeof(char) * strlen(AM));
+	//puntero->ApellidoNombre = (char*) malloc(sizeof(char) * strlen(AM));
 	switch(rand()%5){
 		case 0:
 		puntero->Raza = Orco;
